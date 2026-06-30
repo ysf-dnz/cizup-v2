@@ -1,6 +1,6 @@
 import { getToken, clearTokens, getRefreshToken, setTokens } from "./auth";
 
-const BASE = process.env.NEXT_PUBLIC_API_URL ?? "https://cizup-backend-production.up.railway.app/api/v1";
+const BASE = "https://cizup-backend-production.up.railway.app/api/v1";
 
 export class ApiError extends Error {
   constructor(public status: number, public code: string, message: string) {
